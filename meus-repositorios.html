@@ -1,0 +1,362 @@
+
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Repositórios - rochaalbuquerque</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1 { color: #333; text-align: center; }
+            .info { text-align: center; margin-bottom: 20px; color: #666; }
+            table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .version { font-family: monospace; background-color: #f0f0f0; }
+            .branch { font-style: italic; color: #555; }
+            .readme { max-height: 200px; overflow-y: auto; padding: 10px; }
+            a { color: #0366d6; text-decoration: none; }
+            a:hover { text-decoration: underline; }
+        </style>
+    </head>
+    <body>
+        <h1>Meus Repositórios GitHub</h1>
+        <div class="info">Atualizado em 30/04/2025 20:23:02</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Repositório</th>
+                    <th>Versão (POM)</th>
+                    <th>Branch</th>
+                    <th>Swagger</th>
+                    <th>README</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+                <tr>
+                    <td><a href="https://github.com/rochaalbuquerque/rocha-keyboard-command-api" target="_blank">rocha-keyboard-command-api</a></td>
+                    <td class="version"><version>3.4.5</version></td>
+                    <td class="branch">main</td>
+                    <td>Não encontrado</td>
+                    <td class="readme"><h1>Rocha Keyboard Command AP</h1>
+<p><code>Java 21 (Amazon Corretto)
+Spring Boot 3.2.0
+Spring Data JPA
+MySQL 8.0
+Swagger 3 (Documentação de API)
+Maven 3.8.4 (Gerenciamento de dependências)</code></p>
+<h1>Documentação da API</h1>
+<p><code>Swagger UI: http://localhost:8080/swagger-ui.html
+OpenAPI JSON: http://localhost:8080/v3/api-docs</code></p>
+<h2></h2>
+<h1>Boas Práticas</h1>
+<p>Mensagens de Commit Semânticas
+```
+feat: (new feature for the user, not a new feature for build script)
+fix: (bug fix for the user, not a fix to a build script)
+docs: (changes to the documentation)
+style: (formatting, missing semi colons, etc; no production code change)
+refactor: (refactoring production code, eg. renaming a variable)
+test: (adding missing tests, refactoring tests; no production code change)
+chore: (updating grunt tasks etc; no production code change)</p>
+<h1>EXEMPLO:</h1>
+<p>git commit -m "feat(branche): add Swagger 3, configuraceo e implementacao"</p>
+<p>```</p></td>
+                </tr>
+        
+                <tr>
+                    <td><a href="https://github.com/rochaalbuquerque/rocha-keyboard-command-FrontEnd" target="_blank">rocha-keyboard-command-FrontEnd</a></td>
+                    <td class="version">POM não encontrado</td>
+                    <td class="branch">main</td>
+                    <td>Não encontrado</td>
+                    <td class="readme"><h1>RochaKeyboardCommandFrontEnd</h1>
+<p>This project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 17.2.2.</p>
+<h2>Development server</h2>
+<p>Run <code>ng serve</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The application will automatically reload if you change any of the source files.</p>
+<h2>Code scaffolding</h2>
+<p>Run <code>ng generate component component-name</code> to generate a new component. You can also use <code>ng generate directive|pipe|service|class|guard|interface|enum|module</code>.</p>
+<h2>Build</h2>
+<p>Run <code>ng build</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory.</p>
+<h2>Running unit tests</h2>
+<p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>.</p>
+<h2>Running end-to-end tests</h2>
+<p>Run <code>ng e2e</code> to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.</p>
+<h2>Further help</h2>
+<p>To get more help on the Angular CLI use <code>ng help</code> or go check out the <a href="https://angular.io/cli">Angular CLI Overview and Command Reference</a> page.</p></td>
+                </tr>
+        
+                <tr>
+                    <td><a href="https://github.com/rochaalbuquerque/rocha-api" target="_blank">rocha-api</a></td>
+                    <td class="version"><version>3.1.1</version></td>
+                    <td class="branch">main</td>
+                    <td>Não encontrado</td>
+                    <td class="readme"><h1>rocha-api</h1>
+<h2>MYSQL database</h2>
+<p>```
+spring.datasource.url=jdbc:mysql://localhost:3306/rocha?useTimezone=true&amp;serverTimezone=America/Sao_Paulo
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.username=${MYSQL_LOCAL_USER}
+spring.datasource.password=${MYSQL_LOCAL_PASSWORD}
+spring.datasource.testWhileIdle=true
+spring.datasource.validationQuery=SELECT 1
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.hibernate.naming-strategy=org.hibernate.cfg.ImprovedNamingStrategy</p>
+<h1>LOG</h1>
+<p>logging.level.org.hibernate.SQL=DEBUG
+logging.level.root=INFO
+logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
+```</p>
+<h2>Mongo DB database</h2>
+<p>```
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27017
+spring.data.mongodb.database=rocha</p>
+<h1>spring.data.mongodb.username=root</h1>
+<h1>spring.data.mongodb.password=root</h1>
+<p>```</p>
+<h2>Swagger 3</h2>
+<p><code>Swagger 3 and Spring Boot example (with OpenAPI 3)
+https://www.baeldung.com/spring-rest-openapi-documentation</code></p>
+<h2>Configure Flyway Migration</h2>
+<p>```
+Maven:</p>
+<p><dependency>
+    <groupId>org.flywaydb</groupId>
+    <artifactId>flyway-mysql</artifactId>
+</dependency></p>
+<p>propertie:</p>
+<p>spring.flyway.baselineOnMigrate=true
+spring.flyway.locations=classpath:db/migration
+spring.flyway.schemas=data_base
+spring.flyway.enabled=true
+```</p>
+<h2>Ehcache versão 3</h2>
+<p>```
+https://www.baeldung.com/spring-boot-ehcache
+https://docs.spring.io/spring-boot/docs/2.1.6.RELEASE/reference/html/boot-features-caching.html</p>
+<p>```</p>
+<h2>Configure from 17 to 21</h2>
+<p>```
+<properties>
+    <java.version>21</java.version>
+</properties></p>
+<p>Configuração Global do Workspace:</p>
+<p>Vá para Window &gt; Preferences &gt; Java &gt; Installed JREs.
+Adicione a JRE 21, caso ainda não esteja, e defina-a como padrão.
+```</p>
+<h2>Semantic Commit Messages</h2>
+<p>```
+feat: (new feature for the user, not a new feature for build script)
+fix: (bug fix for the user, not a fix to a build script)
+docs: (changes to the documentation)
+style: (formatting, missing semi colons, etc; no production code change)
+refactor: (refactoring production code, eg. renaming a variable)
+test: (adding missing tests, refactoring tests; no production code change)
+chore: (updating grunt tasks etc; no production code change)</p>
+<p>```</p>
+<h2>Strategy Pattern (Padrão de Projeto)</h2>
+<p><code>Strategy Pattern (Padrão de Projeto)
+Se o código dentro dos blocos if-else é mais complexo e requer diferentes implementações, você pode utilizar o Strategy Pattern. Ele ajuda a separar as diferentes lógicas em classes distintas.</code></p>
+<p>```
+Criação do mapa de estratégias de pagamento:</p>
+<p>O código cria um HashMap<PaymentType, PaymentStrategy>, que associa diferentes tipos de pagamento (PaymentType) às suas respectivas estratégias de processamento (PaymentStrategy).
+São adicionadas três estratégias ao mapa: BoletoStrategy, PixStrategy, e CartaoStrategy, associadas a seus respectivos tipos de pagamento (BOLETO, PIX e CARTÃO).
+Conversão de String para enum PaymentType:</p>
+<p>O método getTypePayment() de orderDTO retorna o tipo de pagamento como uma String. Esse valor é convertido para um enum PaymentType usando o método valueOf().
+A conversão usa toUpperCase() para garantir que o texto da String corresponda exatamente ao nome do enum, que é sensível a maiúsculas/minúsculas.
+Tratamento de erros:</p>
+<p>Se a String do tipo de pagamento não corresponder a nenhum valor do enum, uma exceção IllegalArgumentException será lançada, capturada e transformada em uma FileException com uma mensagem clara sobre o erro.
+Processamento da estratégia de pagamento:</p>
+<p>O código usa o valor convertido de PaymentType como chave para recuperar a estratégia de pagamento correspondente do mapa.
+Se uma estratégia for encontrada, o método process() da estratégia é chamado para executar o processamento do pagamento.
+Caso não haja uma estratégia associada ao tipo de pagamento fornecido, uma exceção FileException é lançada informando que o tipo de pagamento não é suportado.
+Em resumo:
+Esse trecho de código pega o tipo de pagamento de um pedido (orderDTO), converte-o para um enum, encontra a estratégia de pagamento correta no mapa e executa essa estratégia. Se o tipo de pagamento não for válido ou não suportado, ele lança uma exceção.</p>
+<p>Links de referência dos estudos:
+https://github.com/Flavio-Vieirastack/tips/tree/main/strategy-factory 
+https://www.youtube.com/watch?v=DWoPsD_Aq2E
+https://www.youtube.com/watch?v=69eI1fPGsZI&amp;list=LL&amp;index=2
+https://refactoring.guru/design-patterns/strategy/java/example</p>
+<p>```</p>
+<h2>WSL / DOCKER / DOXKER-COMPOSE / IMG MYSQL / IMG MONGO</h2>
+<p>```
+    WSL:
+        usuario: wsl
+        senha/; wsl</p>
+<pre><code>INCIO:
+    wsl
+    docker ps
+
+MYSQL:
+    sudo docker run --name mysql_db -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
+    sudo docker exec -it mysql_db mysql -uroot -p
+
+    docker stop mysql_db
+    docker run mysql_db
+    docker rm msql_db_3306
+    docker rename mysql_db mysql_db_old
+
+
+    SHOW DATABASES;
+    USE rocha;
+    SHOW TABLES;
+    SELECT * FROM nome_da_tabela;
+
+    CREATE DATABASE rocha;
+    DELETE FROM flyway_schema_history WHERE version = '1';
+
+    CREATE TABLE IF NOT EXISTS rocha_client (
+    id INT PRIMARY KEY,
+    cpf_ou_cnpj VARCHAR(20),
+    email VARCHAR(50),
+    first_name VARCHAR(50),
+    last_name VARCHAR(50)
+);
+
+
+
+
+
+    Porta MYSQL:
+        sudo docker run -d --name mysql_db -e MYSQL_ROOT_PASSWORD=root -p 3307:3306 mysql:latest
+
+
+MONGO:
+    docker exec -it mongo_db mongosh
+    show databases;
+    use nome_do_banco;
+    db.nome_da_colecao.find().pretty();
+
+
+CAMINHOS:
+    cd /mnt/d/projects/rocha-api/src/main/resources
+    cd /mnt/c/Users/Rocha
+
+
+COMPOSE:
+    docker-compose -f /mnt/d/projects/rocha-api/src/main/resources/docker-compose.yml up -d
+    ou
+    cd /mnt/d/projects/rocha-api/src/main/resources
+    ls
+    docker compose up -d
+
+DOCKER:
+    docker inspect mysql_db | grep IPAddress
+</code></pre>
+<p>```</p></td>
+                </tr>
+        
+                <tr>
+                    <td><a href="https://github.com/rochaalbuquerque/rocha-frontEnd" target="_blank">rocha-frontEnd</a></td>
+                    <td class="version">POM não encontrado</td>
+                    <td class="branch">main</td>
+                    <td>Não encontrado</td>
+                    <td class="readme"><h1>RochaFrontEnd</h1>
+<h1>Projeto em Angular 18</h1>
+<p>This project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 18.1.2.</p>
+<h2>Development server</h2>
+<p>Run <code>ng serve</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The application will automatically reload if you change any of the source files.</p>
+<h2>Code scaffolding</h2>
+<p>Run <code>ng generate component component-name</code> to generate a new component. You can also use <code>ng generate directive|pipe|service|class|guard|interface|enum|module</code>.</p>
+<h2>Build</h2>
+<p>Run <code>ng build</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory.</p>
+<h2>Running unit tests</h2>
+<p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>.</p>
+<h2>Running end-to-end tests</h2>
+<p>Run <code>ng e2e</code> to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.</p>
+<h2>Further help</h2>
+<p>To get more help on the Angular CLI use <code>ng help</code> or go check out the <a href="https://angular.dev/tools/cli">Angular CLI Overview and Command Reference</a> page.</p></td>
+                </tr>
+        
+                <tr>
+                    <td><a href="https://github.com/rochaalbuquerque/rochaalbuquerque" target="_blank">rochaalbuquerque</a></td>
+                    <td class="version">POM não encontrado</td>
+                    <td class="branch">main</td>
+                    <td>Não encontrado</td>
+                    <td class="readme"><h2>Alex Rocha, estudante de tecnologia! 👽💻</h2>
+<p><br/></p>
+<p align="center">
+  <a href="https://stars.github.com/profiles/denvercoder1/">
+    <img src="https://github.com/DenverCoder1/DenverCoder1/assets/20955511/ca15be3f-d00b-438e-91f6-fb5568c1f632" alt="GitHub Star 2023"/> 
+  </a>
+</p>
+
+<div align="center">       
+  <img align="left" height="50%" width="45%" src ="https://github-readme-stats.vercel.app/api?username=rochaalbuquerque&show_icons=true&count_private=true&theme=darcula&hide_border=true&hide=issues,contribs&bg_color=00000000"> 
+  <img align="left" height="50%" width="50%" src ="https://github-readme-streak-stats.herokuapp.com?user=rochaalbuquerque&theme=darcula&hide_border=true&background=FFFFFF00">
+</div>
+
+<table style="border-collapse: collapse;">
+  <tr>
+    <td width="50%" align="center">    
+      <img  align="center"   alt="Rocha-Spring" height="40" width="40"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg">
+      <img  align="center"  alt="Rocha-VsCod" height="30" width="40"   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
+      <img  align="center"   alt="Rocha-PyCharm" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg">
+      <img  align="center"   alt="Rocha-Intellij" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" />
+      <img  align="center"   alt="Rocha-Anaconda" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original.svg" />
+      <img  align="center"   alt="Rocha-Mysql" height="50" width="40"    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+      <img  align="center"   alt="Rocha-Java" height="40" width="50"     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg">
+      <img  align="center"   alt="Rocha-Python" height="30" width="40"   src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+      <img  align="center"   alt="Rocha-Jupyter" height="30" width="40"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" />
+      <img  align="center"   alt="Rocha-Sonar" height="70" width="50"    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sonarqube/sonarqube-plain-wordmark.svg" />
+      <img  align="center"   alt="Rocha-HTML" height="30" width="40"     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+      <img  align="center"   alt="Rocha-CSS" height="30" width="40"      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+      <img  align="center"   alt="Rocha-Angular" height="50" width="40"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+      <img  align="center"   alt="Rocha-Postman" height="30" width="40"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+      <img  align="center"   alt="Rocha-Json" height="30" width="40"     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg" />
+      <img   alt="Rocha-Notion" height="30" width="40"   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" /> 
+      <img   alt="Rocha-AWS" height="30" width="40"      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
+      <img   alt="Rocha-Jira" height="30" width="40"      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg" /> 
+    </td>
+    <td width="50%" align="center">      
+      <a href="https://www.youtube.com/channel/UC_-uuuZbY0AAt9CViNzvc-Q" target="_blank">
+        <img  src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank">
+      </a>  
+      <a href="https://instagram.com/alexrochadealbuquerque" target="_blank">
+        <img  src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank">
+      </a>  
+      <a href="https://twitter.com/alexrochadev" target="_blank">
+        <img  src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" target="_blank"> 
+      </a>
+     <a href="https://discord.gg/Alex%20Rocha#6542" target="_blank">
+       <img  src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank">
+     </a> 
+    <a href = "mailto:alexrochadealbuquerque@gmail.com">
+      <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank">
+    </a>
+    <a href="https://www.linkedin.com/in/alex-rocha-a279355b" target="_blank">
+      <img  src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank">
+    </a>  
+   <a href="#" target="_blank">
+    <img  src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" target="_blank">
+   </a> 
+  </td>
+</tr>
+</table>
+
+<div align="center"> 
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rochaalbuquerque/rochaalbuquerque/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rochaalbuquerque/rochaalbuquerque/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/rochaalbuquerque/rochaalbuquerque/output/github-contribution-grid-snake.svg">
+  </picture>  
+</div></td>
+                </tr>
+        
+                <tr>
+                    <td><a href="https://github.com/rochaalbuquerque/rocha-python" target="_blank">rocha-python</a></td>
+                    <td class="version">POM não encontrado</td>
+                    <td class="branch">main</td>
+                    <td>Não encontrado</td>
+                    <td class="readme"><h1>rocha-python</h1></td>
+                </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    
